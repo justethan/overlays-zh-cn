@@ -1,18 +1,13 @@
-# Overlays 简体中文（用户授权汉化版）
+# Overlays 简体中文
 
-基于 [IterioDev/car-apps](https://github.com/IterioDev/car-apps) 的 Overlays **1.4.0**，将应用内设置页和介绍翻译为简体中文，发布为 **1.4.3（中文本地版本号，不是作者官方更新）**。1.4.1 解包失败；1.4.2 实车文字不显示，均请勿使用。。原作者：IterioDev；底层渲染及部分代码依赖原项目注明的作者。此仓库不是官方发布，不代表 IterioDev 背书。
+BMW iDrive 8 的 [Overlays](https://github.com/IterioDev/car-apps) 非官方汉化版。基于原版应用 1.4.0，当前汉化版本 **1.4.3**；原作者是 **IterioDev**，此仓库不是官方项目。仓库所有者表示已获得作者对公开发布汉化版的许可；其他人修改或再分发原项目仍须遵守[原项目许可](https://github.com/IterioDev/car-apps/blob/main/LICENSE.md)。
 
-应用 `iteriodev_overlays` 1.4.1 需要独立的 `iteriodev-overlays` 工具 0.5.0 和 `mgu-deploy` 0.7.5；这两个依赖**未在此仓库修改或打包**。车机限定 iDrive 8。
+汉化的是应用设置界面，**不包含**独立的 Overlays 工具（0.5.0）。
 
-## 安装说明
+## 在车机商店安装
 
-1.4.3 已离线确认无扩展属性且中文字库图集宽度不超过 1024 像素；实车显示仍待验证。
+1. **设置 → 添加来源**：输入 `justethan/overlays-zh-cn`，选择 **Releases**，然后点**立即检查**。
+2. 打开 **Overlays（中文）1.4.3** 并安装。若原版 Overlays 来自 IterioDev 来源，商店会阻止跨来源覆盖；需先在**已安装**中只移除原版应用，**不要连同依赖工具一起移除**，再安装汉化版。建议先拍下原有设置。
+3. 如显示**等待重启**，按商店提示完成后，在**已安装**中确认版本。
 
-商店：Settings → Add source → `justethan/overlays-zh-cn` → Releases。联网后 Settings → Check now。若原版来自 IterioDev 来源，Store 对跨来源更新可能显示 blocked；**不能保证直接点击 Update**，不要卸载原版或重启车机来碰运气。先确认车机提供的来源切换/安装路径，或使用电脑通过官方 `mgu-deploy.sh check/install --artifact` 路径在已授权和备份后安装。
-
-此包仅完成离线渲染、字形及目录校验，尚未在实车验证。先备份现有应用设置及软件状态；操作车辆需停稳、稳定供电。上游未来更新应用会覆盖中文，需要针对新版重新汉化。
-
-## 下载
-
-- [汉化源包（1.4.3）](https://github.com/justethan/overlays-zh-cn/releases/download/iteriodev_overlays%401.4.3/iteriodev_overlays%401.4.3.tgz)
-- Store `catalog` 发布版提供在线目录。
+[下载 1.4.3 安装包](https://github.com/justethan/overlays-zh-cn/releases/tag/iteriodev_overlays%401.4.3)。**不要使用 1.4.1 或 1.4.2**：它们分别有解包失败、文字不显示的问题。1.4.3 已由用户反馈在实车上正常显示中文；其他车辆和软件版本未验证。

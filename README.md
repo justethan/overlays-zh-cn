@@ -2,8 +2,6 @@
 
 基于 [IterioDev/car-apps](https://github.com/IterioDev/car-apps) 的 Overlays **1.4.0**，将应用内设置页和介绍翻译为简体中文，发布为 **1.4.3（中文本地版本号，不是作者官方更新）**。1.4.1 解包失败；1.4.2 实车文字不显示，均请勿使用。。原作者：IterioDev；底层渲染及部分代码依赖原项目注明的作者。此仓库不是官方发布，不代表 IterioDev 背书。
 
-原版许可和署名见 [IterioDev/car-apps/LICENSE.md](https://github.com/IterioDev/car-apps/blob/main/LICENSE.md)。仓库所有者表示已获得原作者对公开发布这个汉化版本的许可；**这不意味着其他人自动获得修改或再分发原项目的许可**。
-
 应用 `iteriodev_overlays` 1.4.1 需要独立的 `iteriodev-overlays` 工具 0.5.0 和 `mgu-deploy` 0.7.5；这两个依赖**未在此仓库修改或打包**。车机限定 iDrive 8。
 
 ## 安装说明
